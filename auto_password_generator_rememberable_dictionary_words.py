@@ -15,6 +15,8 @@ def password_generator():
     password = str()
     one = random.randint(0,5)
     strong_texts = '1234567890!@#$%&*()'
+    # strong_texts = '1234567890!@#$%&*()abcdefghijklmnopqrstuvwxyz' 
+    # Also you can use this
     for i in range(one):
         password = password + random.choice(strong_texts)
     password = password + random.choice(words)
